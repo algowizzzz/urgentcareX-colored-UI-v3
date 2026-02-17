@@ -187,7 +187,7 @@ export default function AppointmentDetails({
           {isConfirmed && onMarkComplete && (
             <Button
               onClick={onMarkComplete}
-              className="w-full h-[52px] bg-[#6B7280] text-white rounded-xl text-base font-medium hover:bg-[#4B5563] flex items-center justify-center gap-2"
+              className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF] flex items-center justify-center gap-2"
             >
               <CheckCircle className="w-5 h-5" />
               Mark as Complete
