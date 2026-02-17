@@ -94,7 +94,7 @@ export default function ROSRespiratory({ onContinue, onBack, initialData }: ROSR
               className={`flex items-center gap-3 cursor-pointer p-4 rounded-xl transition-all ${
                 selectedSymptoms[symptom]
                   ? 'bg-[#1F2937]/5 border-2 border-[#1F2937]'
-                  : 'bg-white border-2 border-[#E5E7EB] hover:border-[#D72638]/30'
+                  : 'bg-white border-2 border-[#E5E7EB] hover:border-[#FFC72C]/30'
               }`}
             >
               <Checkbox
@@ -113,7 +113,7 @@ export default function ROSRespiratory({ onContinue, onBack, initialData }: ROSR
       <div className="bg-white border-t border-[#E5E7EB] p-4">
         <Button 
           onClick={handleContinue}
-          className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"
+          className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800]"
         >
           Continue
         </Button>

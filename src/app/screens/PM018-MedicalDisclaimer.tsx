@@ -97,7 +97,7 @@ export default function MedicalDisclaimer({ onUnderstand, onBack }: MedicalDiscl
           <div className="h-px bg-[#E5E7EB] mb-6"></div>
 
           {/* Emergency Warning */}
-          <div className="bg-[#FEF2F2] border-2 border-[#EF4444] rounded-2xl p-5 mb-6">
+          <div className="bg-[#FFFDF0] border-2 border-[#EF4444] rounded-2xl p-5 mb-6">
             <div className="flex items-start gap-3">
               <span className="text-2xl">🚨</span>
               <div className="flex-1">
@@ -176,7 +176,7 @@ export default function MedicalDisclaimer({ onUnderstand, onBack }: MedicalDiscl
       <div className="p-6 border-t border-[#E5E7EB] bg-white">
         <Button 
           onClick={onUnderstand}
-          className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"
+          className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800]"
         >
           I Understand
         </Button>

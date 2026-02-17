@@ -88,7 +88,7 @@ export default function InsuranceIntro({ onAddInsurance, onNoInsurance, onBack }
       <div className="bg-white border-t border-[#E5E7EB] p-4 space-y-3">
         <Button 
           onClick={onAddInsurance}
-          className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"
+          className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800]"
         >
           Add Insurance
         </Button>

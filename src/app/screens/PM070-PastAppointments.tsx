@@ -62,7 +62,7 @@ const DEMO_PAST_APPOINTMENTS: PastAppointment[] = [
 
 const doctorColors = ['#3B82F6', '#8B5CF6', '#10B981', '#F59E0B'];
 const doctorBgs = ['#EFF6FF', '#F5F3FF', '#ECFDF5', '#FFFBEB'];
-const doctorBorders = ['#BFDBFE', '#DDD6FE', '#A7F3D0', '#FDE68A'];
+const doctorBorders = ['#BFDBFE', '#DDD6FE', '#A7F3D0', '#FFE066'];
 
 export default function PastAppointments({ onViewDetails, onBack }: PastAppointmentsProps) {
   const [appointments] = useState<PastAppointment[]>(DEMO_PAST_APPOINTMENTS);
@@ -105,7 +105,7 @@ export default function PastAppointments({ onViewDetails, onBack }: PastAppointm
               onClick={() => setFilterPeriod(f.value)}
               className={`px-4 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
                 filterPeriod === f.value
-                  ? 'bg-[#D72638] text-white'
+                  ? 'bg-[#FFC72C] text-[#1F2937]'
                   : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB] border border-[#E5E7EB]'
               }`}
             >
@@ -141,7 +141,7 @@ export default function PastAppointments({ onViewDetails, onBack }: PastAppointm
                 <div
                   key={appointment.id}
                   onClick={() => onViewDetails(appointment)}
-                  className="bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden hover:border-[#D72638]/30 hover:shadow-md transition-all cursor-pointer group"
+                  className="bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden hover:border-[#FFC72C]/30 hover:shadow-md transition-all cursor-pointer group"
                   style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}
                 >
                   <div className="p-4">
@@ -161,7 +161,7 @@ export default function PastAppointments({ onViewDetails, onBack }: PastAppointm
                           {appointment.specialty}
                         </p>
                       </div>
-                      <ChevronRight className="w-4 h-4 text-[#D1D5DB] group-hover:text-[#D72638] transition-colors mt-1 shrink-0" />
+                      <ChevronRight className="w-4 h-4 text-[#D1D5DB] group-hover:text-[#B8860B] transition-colors mt-1 shrink-0" />
                     </div>
 
                     {/* Divider */}
@@ -171,7 +171,7 @@ export default function PastAppointments({ onViewDetails, onBack }: PastAppointm
                     <div className="flex items-center gap-3 mb-3">
                       <div className="flex items-center gap-1.5">
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
-                          <rect x="3" y="4" width="18" height="18" rx="3" fill="#D72638" />
+                          <rect x="3" y="4" width="18" height="18" rx="3" fill="#FFC72C" />
                           <path d="M3 10H21" stroke="white" strokeWidth="1.5" />
                           <rect x="7" y="13" width="3" height="3" rx="0.5" fill="white" />
                         </svg>
@@ -223,7 +223,7 @@ export default function PastAppointments({ onViewDetails, onBack }: PastAppointm
                         </span>
                       </div>
                       {appointment.hasDocuments && (
-                        <div className="flex items-center gap-1 px-2 py-0.5 bg-[#FFFBEB] rounded-full border border-[#FDE68A]">
+                        <div className="flex items-center gap-1 px-2 py-0.5 bg-[#FFFBEB] rounded-full border border-[#FFE066]">
                           <svg width="10" height="10" viewBox="0 0 24 24" fill="none">
                             <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" fill="#F59E0B" />
                             <path d="M14 2V8H20" stroke="white" strokeWidth="1.5" />
@@ -253,9 +253,9 @@ export default function PastAppointments({ onViewDetails, onBack }: PastAppointm
           <p className="text-xs text-[#9CA3AF]">
             {filteredAppointments.length} appointment{filteredAppointments.length !== 1 ? 's' : ''}
           </p>
-          <button className="flex items-center gap-1.5 text-xs font-semibold text-[#D72638]">
+          <button className="flex items-center gap-1.5 text-xs font-semibold text-[#B8860B]">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-              <path d="M21 15V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V15M7 10L12 15M12 15L17 10M12 15V3" stroke="#D72638" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M21 15V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V15M7 10L12 15M12 15L17 10M12 15V3" stroke="#FFC72C" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             Export All
           </button>
