@@ -108,7 +108,7 @@ export default function AppointmentConfirmation({
       <div className="bg-white border-t border-[#E5E7EB] p-4">
         <Button 
           onClick={onGoHome}
-          className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800]"
+          className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF]"
         >
           <Home className="w-5 h-5 mr-2" />
           Confirm

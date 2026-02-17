@@ -34,11 +34,11 @@ export default function Dashboard({
       title: 'Appointment Reminder',
       message: 'Your appointment with Dr. Sarah Johnson is tomorrow at 10:00 AM',
       time: '2h ago',
-      color: '#FFC72C',
+      color: '#1E3A8A',
       icon: (
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-          <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" fill="#FFC72C" />
-          <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="#FFC72C" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" fill="#1E3A8A" />
+          <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="#1E3A8A" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       )
     },
@@ -85,20 +85,20 @@ export default function Dashboard({
       {/* Header with gradient */}
       <div className="bg-gradient-to-br from-[#1F2937] to-[#111827] px-6 pt-8 pb-6 relative overflow-hidden">
         {/* Decorative circles */}
-        <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#FFC72C]/5 rounded-full"></div>
-        <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#FFC72C]/5 rounded-full"></div>
+        <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#1E3A8A]/5 rounded-full"></div>
+        <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#1E3A8A]/5 rounded-full"></div>
 
         <div className={`flex items-center justify-between transition-all duration-700 ${mounted ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}>
           <div className="flex items-center gap-3">
             {/* User Avatar with ring animation */}
             <div className="relative">
-              <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#FFC72C] to-[#E5A800] flex items-center justify-center ring-2 ring-[#FFC72C]/30 shadow-lg shadow-[#FFC72C]/20">
-                <span className="text-sm font-bold text-[#1F2937]">{userName.charAt(0)}</span>
+              <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#1E3A8A] to-[#1E40AF] flex items-center justify-center ring-2 ring-[#93C5FD]/30 shadow-lg shadow-[#3B82F6]/20">
+                <span className="text-sm font-bold text-white">{userName.charAt(0)}</span>
               </div>
               <div className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-[#10B981] rounded-full border-2 border-[#1F2937]"></div>
             </div>
             <div>
-              <p className="text-xs text-[#FFC72C]/70 font-medium">{getGreeting()}</p>
+              <p className="text-xs text-[#93C5FD]/80 font-medium">{getGreeting()}</p>
               <h1 className="text-lg font-bold text-white">{userName}</h1>
             </div>
           </div>
@@ -129,8 +129,8 @@ export default function Dashboard({
             <div className="bg-gradient-to-br from-[#1F2937] to-[#111827] px-6 py-4 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <h2 className="text-lg font-semibold text-white">Notifications</h2>
-                <div className="px-2 py-0.5 bg-[#FFC72C] rounded-full">
-                  <span className="text-[10px] font-bold text-[#1F2937]">{notifications.length}</span>
+                <div className="px-2 py-0.5 bg-[#1E3A8A] rounded-full">
+                  <span className="text-[10px] font-bold text-white">{notifications.length}</span>
                 </div>
               </div>
               <button
@@ -193,7 +193,7 @@ export default function Dashboard({
       <div className="flex-1 px-5 py-5 overflow-y-auto pb-24">
         {/* Quick Actions Card — Hero style */}
         <div
-          className={`bg-gradient-to-br from-[#FFC72C] to-[#E5A800] rounded-2xl p-5 mb-5 shadow-lg shadow-[#FFC72C]/20 relative overflow-hidden transition-all duration-700 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}
+          className={`bg-gradient-to-br from-[#1E3A8A] to-[#1E40AF] rounded-2xl p-5 mb-5 shadow-lg shadow-[#1E3A8A]/20 relative overflow-hidden transition-all duration-700 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}
         >
           {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-12 translate-x-12"></div>
@@ -212,20 +212,20 @@ export default function Dashboard({
               </svg>
             </div>
             <div>
-              <h2 className="text-lg font-bold text-[#1F2937]">
+              <h2 className="text-lg font-bold text-white">
                 How can we help?
               </h2>
-              <p className="text-sm text-[#1F2937]/60 font-medium">AI-powered symptom assessment</p>
+              <p className="text-sm text-white/60 font-medium">AI-powered symptom assessment</p>
             </div>
           </div>
           <Button
             onClick={onStartSymptomCheck}
-            className="w-full h-[52px] bg-[#1F2937] text-white rounded-xl text-base font-semibold hover:bg-[#111827] shadow-lg active:scale-[0.98] transition-all relative overflow-hidden group"
+            className="w-full h-[52px] bg-white text-[#1E3A8A] rounded-xl text-base font-semibold hover:bg-[#F8FAFC] shadow-lg active:scale-[0.98] transition-all relative overflow-hidden group"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#1E3A8A]/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" className="mr-2.5 relative">
-              <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" fill="#FFC72C" />
-              <path d="M9.5 10.5H9.51M12.5 10.5H12.51M15.5 10.5H15.51" stroke="#1F2937" strokeWidth="2.5" strokeLinecap="round" />
+              <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" fill="#1E3A8A" />
+              <path d="M9.5 10.5H9.51M12.5 10.5H12.51M15.5 10.5H15.51" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
             </svg>
             <span className="relative">Find Care Now</span>
           </Button>
@@ -235,14 +235,14 @@ export default function Dashboard({
         <div className={`mb-5 transition-all duration-700 delay-100 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
-              <div className="w-1.5 h-5 rounded-full bg-gradient-to-b from-[#FFC72C] to-[#E5A800]"></div>
+              <div className="w-1.5 h-5 rounded-full bg-gradient-to-b from-[#1E3A8A] to-[#1E40AF]"></div>
               <h3 className="text-[15px] font-bold text-[#1F2937]">Upcoming Appointments</h3>
             </div>
-            <button onClick={onViewAppointments} className="text-xs font-semibold text-[#B8860B] hover:text-[#8B6914] active:scale-95 transition-all">See All</button>
+            <button onClick={onViewAppointments} className="text-xs font-semibold text-[#2563EB] hover:text-[#1E40AF] active:scale-95 transition-all">See All</button>
           </div>
 
           <div className="bg-white rounded-2xl shadow-sm border border-[#E5E7EB] overflow-hidden hover:shadow-md transition-shadow">
-            <div className="border-l-4 border-[#FFC72C] p-4">
+            <div className="border-l-4 border-[#1E3A8A] p-4">
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-start gap-3 flex-1">
                   {/* Doctor Avatar — richer */}
@@ -273,7 +273,7 @@ export default function Dashboard({
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-2 text-sm">
                   {/* Calendar icon — gradient filled */}
-                  <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#FFC72C] to-[#E5A800] flex items-center justify-center shadow-sm">
+                  <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#1E3A8A] to-[#1E40AF] flex items-center justify-center shadow-sm">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
                       <path d="M3 10H21" stroke="white" strokeWidth="1.5" />
                       <rect x="7" y="13" width="3" height="3" rx="0.5" fill="white" />
@@ -320,12 +320,12 @@ export default function Dashboard({
             {/* Facility 1 */}
             <div
               onClick={() => onViewFacility?.('facility-1')}
-              className="bg-white rounded-xl p-4 shadow-sm border border-[#E5E7EB] hover:border-[#FFC72C]/50 hover:shadow-lg transition-all active:scale-[0.98] group cursor-pointer"
+              className="bg-white rounded-xl p-4 shadow-sm border border-[#E5E7EB] hover:border-[#1E3A8A]/50 hover:shadow-lg transition-all active:scale-[0.98] group cursor-pointer"
             >
               <div className="flex items-start justify-between">
                 <div className="flex items-start gap-3 flex-1">
                   {/* Hospital icon — gradient */}
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FFC72C] to-[#E5A800] flex items-center justify-center shrink-0 shadow-md shadow-yellow-200 group-hover:shadow-yellow-300 transition-shadow">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#1E3A8A] to-[#1E40AF] flex items-center justify-center shrink-0 shadow-md shadow-blue-200 group-hover:shadow-blue-300 transition-shadow">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                       <path d="M3 21H21" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
                       <path d="M5 21V7L12 3L19 7V21" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -334,7 +334,7 @@ export default function Dashboard({
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-[#1F2937] mb-1 group-hover:text-[#B8860B] transition-colors">
+                    <p className="text-sm font-semibold text-[#1F2937] mb-1 group-hover:text-[#2563EB] transition-colors">
                       UrgentCare Center - Downtown
                     </p>
                     <div className="flex items-center gap-1.5 text-xs text-[#6B7280] mb-2">
@@ -345,7 +345,7 @@ export default function Dashboard({
                       <span className="font-semibold text-[#6366F1]">0.8 mi</span>
                       <span className="text-[#D1D5DB]">|</span>
                       <span className="flex items-center gap-1">
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#FFC72C" /></svg>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#F59E0B" /></svg>
                         <span className="font-medium text-[#374151]">4.8</span>
                       </span>
                     </div>
@@ -358,7 +358,7 @@ export default function Dashboard({
                     </div>
                   </div>
                 </div>
-                <ChevronRight className="w-4 h-4 text-[#D1D5DB] group-hover:text-[#FFC72C] group-hover:translate-x-0.5 transition-all mt-1 shrink-0" />
+                <ChevronRight className="w-4 h-4 text-[#D1D5DB] group-hover:text-[#1E3A8A] group-hover:translate-x-0.5 transition-all mt-1 shrink-0" />
               </div>
             </div>
 
@@ -389,7 +389,7 @@ export default function Dashboard({
                       <span className="font-semibold text-[#6366F1]">1.2 mi</span>
                       <span className="text-[#D1D5DB]">|</span>
                       <span className="flex items-center gap-1">
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#FFC72C" /></svg>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#F59E0B" /></svg>
                         <span className="font-medium text-[#374151]">4.6</span>
                       </span>
                     </div>
@@ -433,7 +433,7 @@ export default function Dashboard({
                       <span className="font-semibold text-[#6366F1]">2.4 mi</span>
                       <span className="text-[#D1D5DB]">|</span>
                       <span className="flex items-center gap-1">
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#FFC72C" /></svg>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#F59E0B" /></svg>
                         <span className="font-medium text-[#374151]">4.9</span>
                       </span>
                     </div>

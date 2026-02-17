@@ -238,7 +238,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
           </Button>
           <Button 
             onClick={handleContinue}
-            className="flex-1 h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800]"
+            className="flex-1 h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF]"
           >
             Continue
           </Button>
@@ -371,7 +371,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
               <Button
                 onClick={handleAddMedication}
                 disabled={!newMedication.name || !isDosageValid() || !newMedication.frequency}
-                className="flex-1 h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800] disabled:bg-[#E5E7EB] disabled:text-[#9CA3AF]"
+                className="flex-1 h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF] disabled:bg-[#E5E7EB] disabled:text-[#9CA3AF]"
               >
                 Add
               </Button>

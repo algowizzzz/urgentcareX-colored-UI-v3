@@ -275,7 +275,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
               <div
                 key={appointment.id}
                 onClick={() => onViewDetails(appointment)}
-                className="border border-[#E5E7EB] rounded-2xl p-5 hover:border-[#FFC72C] transition-colors cursor-pointer"
+                className="border border-[#E5E7EB] rounded-2xl p-5 hover:border-[#1E3A8A] transition-colors cursor-pointer"
               >
                 {/* Type Badge */}
                 <div className="flex items-center gap-2 mb-3">
@@ -323,7 +323,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
                   <div className="mt-4 pt-4 border-t border-[#E5E7EB]">
                     <button
                       onClick={(e) => handleCompleteROS(e, appointment.id)}
-                      className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-[#FFC72C] text-[#1F2937] rounded-xl text-sm font-medium hover:bg-[#E5A800] transition-colors"
+                      className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-[#1E3A8A] text-white rounded-xl text-sm font-medium hover:bg-[#1E40AF] transition-colors"
                     >
                       <ClipboardList className="w-4 h-4" />
                       Complete ROS
@@ -347,7 +347,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
                   <div className="mt-4 pt-4 border-t border-[#E5E7EB]">
                     <button
                       onClick={(e) => handleLeaveReview(e, appointment)}
-                      className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-[#FFC72C] text-[#1F2937] rounded-xl text-sm font-medium hover:bg-[#E5A800] transition-colors"
+                      className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-[#1E3A8A] text-white rounded-xl text-sm font-medium hover:bg-[#1E40AF] transition-colors"
                     >
                       <MessageSquare className="w-4 h-4" />
                       Leave a Review
@@ -359,7 +359,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
                   <div className="mt-4 pt-4 border-t border-[#E5E7EB]">
                     <button
                       onClick={(e) => handleRebook(e, appointment)}
-                      className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-[#FFC72C] text-[#1F2937] rounded-xl text-sm font-medium hover:bg-[#E5A800] transition-colors"
+                      className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-[#1E3A8A] text-white rounded-xl text-sm font-medium hover:bg-[#1E40AF] transition-colors"
                     >
                       <Calendar className="w-4 h-4" />
                       Rebook Appointment

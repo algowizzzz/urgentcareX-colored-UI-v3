@@ -139,7 +139,7 @@ export default function InsuranceMemberDetails({ providerName, onContinue, onBac
         <Button 
           onClick={handleContinue}
           disabled={!isValid}
-          className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800] disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF] disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Continue
         </Button>

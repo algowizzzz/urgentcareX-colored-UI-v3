@@ -204,7 +204,7 @@ export default function Lifestyle({ onContinue, onSkip, onBack, initialData }: L
           </Button>
           <Button 
             onClick={handleContinue}
-            className="flex-1 h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800]"
+            className="flex-1 h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF]"
           >
             Continue
           </Button>

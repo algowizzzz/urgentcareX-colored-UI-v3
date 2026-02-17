@@ -56,7 +56,7 @@ export default function EditProfile({ onSave, onBack }: EditProfileProps) {
               type="text"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
-              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#FFC72C]"
+              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#1E3A8A]"
             />
           </div>
 
@@ -68,7 +68,7 @@ export default function EditProfile({ onSave, onBack }: EditProfileProps) {
               type="text"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
-              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#FFC72C]"
+              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#1E3A8A]"
             />
           </div>
 
@@ -93,7 +93,7 @@ export default function EditProfile({ onSave, onBack }: EditProfileProps) {
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#FFC72C]"
+              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#1E3A8A]"
             />
             <p className="text-xs text-[#6B7280] mt-1">Providers may call to coordinate appointment details</p>
           </div>
@@ -106,7 +106,7 @@ export default function EditProfile({ onSave, onBack }: EditProfileProps) {
               type="date"
               value={dateOfBirth}
               onChange={(e) => setDateOfBirth(e.target.value)}
-              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#FFC72C]"
+              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#1E3A8A]"
             />
           </div>
 
@@ -121,7 +121,7 @@ export default function EditProfile({ onSave, onBack }: EditProfileProps) {
         <div className="mt-6">
           <Button 
             onClick={handleSave}
-            className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800]"
+            className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF]"
           >
             Save Changes
           </Button>

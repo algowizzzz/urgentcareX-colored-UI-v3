@@ -165,7 +165,7 @@ export default function AppointmentDetails({
           {isCancelled && onRebook && (
             <Button
               onClick={onRebook}
-              className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800] flex items-center justify-center gap-2"
+              className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF] flex items-center justify-center gap-2"
             >
               <Calendar className="w-5 h-5" />
               Rebook Appointment
@@ -176,7 +176,7 @@ export default function AppointmentDetails({
           {!appointment.rosCompleted && !isCompleted && !isCancelled && onCompleteROS && (
             <Button
               onClick={onCompleteROS}
-              className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800] flex items-center justify-center gap-2"
+              className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF] flex items-center justify-center gap-2"
             >
               <ClipboardList className="w-5 h-5" />
               Complete {QUESTIONNAIRE_NAME}
@@ -198,7 +198,7 @@ export default function AppointmentDetails({
           {isCompleted && onLeaveReview && (
             <Button
               onClick={onLeaveReview}
-              className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800] flex items-center justify-center gap-2"
+              className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF] flex items-center justify-center gap-2"
             >
               <MessageSquare className="w-5 h-5" />
               Leave a Review

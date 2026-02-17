@@ -95,7 +95,7 @@ export default function BasicInfoDOBSex({ onContinue, onBack, initialData }: Bas
                 onClick={() => setSex('male')}
                 className={`h-[72px] rounded-xl border-2 text-base font-medium transition-all ${
                   sex === 'male'
-                    ? 'border-[#FFC72C] bg-[#F3F4F6]'
+                    ? 'border-[#1E3A8A] bg-[#F3F4F6]'
                     : 'border-[#E5E7EB] bg-white'
                 }`}
               >
@@ -109,7 +109,7 @@ export default function BasicInfoDOBSex({ onContinue, onBack, initialData }: Bas
                 onClick={() => setSex('female')}
                 className={`h-[72px] rounded-xl border-2 text-base font-medium transition-all ${
                   sex === 'female'
-                    ? 'border-[#FFC72C] bg-[#F3F4F6]'
+                    ? 'border-[#1E3A8A] bg-[#F3F4F6]'
                     : 'border-[#E5E7EB] bg-white'
                 }`}
               >
@@ -124,7 +124,7 @@ export default function BasicInfoDOBSex({ onContinue, onBack, initialData }: Bas
               onClick={() => setSex('prefer-not-to-say')}
               className={`w-full h-[52px] rounded-xl border-2 text-base font-medium transition-all ${
                 sex === 'prefer-not-to-say'
-                  ? 'border-[#FFC72C] bg-[#F3F4F6]'
+                  ? 'border-[#1E3A8A] bg-[#F3F4F6]'
                   : 'border-[#E5E7EB] bg-white'
               }`}
             >
@@ -145,7 +145,7 @@ export default function BasicInfoDOBSex({ onContinue, onBack, initialData }: Bas
         <Button 
           onClick={handleContinue}
           disabled={!isValid}
-          className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800] disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF] disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Continue
         </Button>

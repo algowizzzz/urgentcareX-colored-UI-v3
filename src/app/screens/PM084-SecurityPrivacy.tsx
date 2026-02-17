@@ -26,7 +26,7 @@ export default function SecurityPrivacy({ onNavigate, onBack }: SecurityPrivacyP
           <div className="space-y-3">
             <button
               onClick={() => onNavigate('change-password')}
-              className="w-full flex items-center justify-between p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#FFC72C] transition-colors"
+              className="w-full flex items-center justify-between p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#1E3A8A] transition-colors"
             >
               <div className="flex items-center gap-3">
                 <Lock className="w-5 h-5 text-[#6B7280]" />
@@ -52,7 +52,7 @@ export default function SecurityPrivacy({ onNavigate, onBack }: SecurityPrivacyP
         </div>
 
         {/* HIPAA Compliance */}
-        <div className="bg-[#F3F4F6] border-l-4 border-[#FFC72C] rounded-xl p-4">
+        <div className="bg-[#F3F4F6] border-l-4 border-[#1E3A8A] rounded-xl p-4">
           <h3 className="text-sm font-semibold text-[#1F2937] mb-2">
             🔒 HIPAA Compliant
           </h3>

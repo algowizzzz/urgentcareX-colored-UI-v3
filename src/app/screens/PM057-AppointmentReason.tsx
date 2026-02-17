@@ -60,7 +60,7 @@ export default function AppointmentReason({ providerName, onContinue, onBack }: 
                 className={`w-full text-left p-4 rounded-xl transition-all ${
                   selectedReason === reason
                     ? 'bg-[#1F2937] text-white'
-                    : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#FFC72C]'
+                    : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#1E3A8A]'
                 }`}
               >
                 {reason}
@@ -81,7 +81,7 @@ export default function AppointmentReason({ providerName, onContinue, onBack }: 
             value={details}
             onChange={(e) => setDetails(e.target.value)}
             placeholder="Describe your symptoms, concerns, or questions..."
-            className="w-full h-32 px-4 py-3 border border-[#E5E7EB] rounded-xl text-base resize-none focus:outline-none focus:border-[#FFC72C]"
+            className="w-full h-32 px-4 py-3 border border-[#E5E7EB] rounded-xl text-base resize-none focus:outline-none focus:border-[#1E3A8A]"
           />
         </div>
 
@@ -101,7 +101,7 @@ export default function AppointmentReason({ providerName, onContinue, onBack }: 
         <Button 
           onClick={handleContinue}
           disabled={!selectedReason}
-          className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800] disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF] disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Continue
         </Button>

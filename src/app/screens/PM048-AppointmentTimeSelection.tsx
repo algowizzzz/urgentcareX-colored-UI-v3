@@ -64,7 +64,7 @@ export default function AppointmentTimeSelection({ providerName, onSelectTime, o
                 className={`flex-shrink-0 w-16 py-3 rounded-xl text-center transition-all ${
                   selectedDate === date.date
                     ? 'bg-[#1F2937] text-white'
-                    : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#FFC72C]'
+                    : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#1E3A8A]'
                 }`}
               >
                 <p className="text-xs mb-1">{date.day}</p>
@@ -90,7 +90,7 @@ export default function AppointmentTimeSelection({ providerName, onSelectTime, o
                   className={`py-3 rounded-xl text-sm font-medium transition-all ${
                     selectedTime === time
                       ? 'bg-[#1F2937] text-white'
-                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#FFC72C]'
+                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#1E3A8A]'
                   }`}
                 >
                   {time}
@@ -110,7 +110,7 @@ export default function AppointmentTimeSelection({ providerName, onSelectTime, o
                   className={`py-3 rounded-xl text-sm font-medium transition-all ${
                     selectedTime === time
                       ? 'bg-[#1F2937] text-white'
-                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#FFC72C]'
+                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#1E3A8A]'
                   }`}
                 >
                   {time}
@@ -130,7 +130,7 @@ export default function AppointmentTimeSelection({ providerName, onSelectTime, o
                   className={`py-3 rounded-xl text-sm font-medium transition-all ${
                     selectedTime === time
                       ? 'bg-[#1F2937] text-white'
-                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#FFC72C]'
+                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#1E3A8A]'
                   }`}
                 >
                   {time}
@@ -146,7 +146,7 @@ export default function AppointmentTimeSelection({ providerName, onSelectTime, o
         <Button 
           onClick={handleContinue}
           disabled={!selectedTime}
-          className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800] disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF] disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <CalendarIcon className="w-5 h-5 mr-2" />
           Continue

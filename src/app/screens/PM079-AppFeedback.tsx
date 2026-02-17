@@ -128,7 +128,7 @@ export default function AppFeedback({ onSubmit, onSkip, onBack }: AppFeedbackPro
               value={feedback}
               onChange={(e) => setFeedback(e.target.value)}
               placeholder="Share your thoughts..."
-              className="w-full h-32 px-4 py-3 border border-[#E5E7EB] rounded-xl text-base resize-none focus:outline-none focus:border-[#FFC72C]"
+              className="w-full h-32 px-4 py-3 border border-[#E5E7EB] rounded-xl text-base resize-none focus:outline-none focus:border-[#1E3A8A]"
             />
             <p className="text-xs text-[#6B7280] mt-2">
               Your feedback is reviewed by our product team
@@ -180,7 +180,7 @@ export default function AppFeedback({ onSubmit, onSkip, onBack }: AppFeedbackPro
           <Button 
             onClick={handleSubmit}
             disabled={rating === 0}
-            className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800] disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF] disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Submit Feedback
           </Button>

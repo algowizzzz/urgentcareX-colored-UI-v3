@@ -86,7 +86,7 @@ export default function ROSGastrointestinal({ onContinue, onBack, initialData }:
               className={`flex items-center gap-3 cursor-pointer p-4 rounded-xl transition-all ${
                 selectedSymptoms[symptom]
                   ? 'bg-[#1F2937]/5 border-2 border-[#1F2937]'
-                  : 'bg-white border-2 border-[#E5E7EB] hover:border-[#FFC72C]/30'
+                  : 'bg-white border-2 border-[#E5E7EB] hover:border-[#1E3A8A]/30'
               }`}
             >
               <Checkbox
@@ -105,7 +105,7 @@ export default function ROSGastrointestinal({ onContinue, onBack, initialData }:
       <div className="bg-white border-t border-[#E5E7EB] p-4">
         <Button 
           onClick={handleContinue}
-          className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800]"
+          className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF]"
         >
           Continue
         </Button>

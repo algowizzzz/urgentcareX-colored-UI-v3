@@ -63,7 +63,7 @@ export default function ForgotPasswordOTP({ email, onVerify, onBack }: ForgotPas
   };
 
   return (
-    <div className="flex flex-col h-full bg-[#FFC72C]">
+    <div className="flex flex-col h-full bg-[#1E3A8A]">
       {/* Header with Back Button */}
       <div className="flex items-center p-4">
         <button onClick={onBack} className="p-2">
@@ -100,7 +100,7 @@ export default function ForgotPasswordOTP({ email, onVerify, onBack }: ForgotPas
               style={{
                 backgroundColor: digit ? 'white' : 'rgba(255,255,255,0.15)',
                 borderColor: digit ? 'white' : 'rgba(255,255,255,0.3)',
-                color: digit ? '#FFC72C' : 'white',
+                color: digit ? '#1E3A8A' : 'white',
               }}
             />
           ))}
@@ -125,7 +125,7 @@ export default function ForgotPasswordOTP({ email, onVerify, onBack }: ForgotPas
         <Button
           onClick={onVerify}
           disabled={otp.some(digit => !digit)}
-          className="w-full h-[52px] bg-white text-[#B8860B] rounded-xl text-base font-semibold hover:bg-white/90 disabled:bg-white/30 disabled:text-white/50"
+          className="w-full h-[52px] bg-white text-[#2563EB] rounded-xl text-base font-semibold hover:bg-white/90 disabled:bg-white/30 disabled:text-white/50"
         >
           Verify
         </Button>

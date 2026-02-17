@@ -150,7 +150,7 @@ export default function SymptomCheckHistory({
                   {session.status === 'in-progress' && (
                     <Button
                       onClick={() => onResumeSession(session.sessionId)}
-                      className="flex-1 h-[40px] bg-[#FFC72C] text-[#1F2937] rounded-lg text-sm font-medium hover:bg-[#E5A800]"
+                      className="flex-1 h-[40px] bg-[#1E3A8A] text-white rounded-lg text-sm font-medium hover:bg-[#1E40AF]"
                     >
                       <MessageSquare className="w-4 h-4 mr-2" />
                       Resume

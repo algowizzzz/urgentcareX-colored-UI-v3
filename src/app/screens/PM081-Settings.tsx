@@ -104,7 +104,7 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
           action: () => onNavigate('location-radius'),
           color: '#F59E0B',
           bg: '#FFFBEB',
-          border: '#FFE066',
+          border: '#DBEAFE',
           icon: (
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
               <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" fill="#F59E0B" />
@@ -134,12 +134,12 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
         {
           label: 'Help & Support',
           action: () => onNavigate('help-support'),
-          color: '#FFC72C',
-          bg: '#FFFDF0',
-          border: '#FFE066',
+          color: '#1E3A8A',
+          bg: '#EFF6FF',
+          border: '#DBEAFE',
           icon: (
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="9" fill="#FFC72C" />
+              <circle cx="12" cy="12" r="9" fill="#1E3A8A" />
               <path d="M9 9C9 7.34315 10.3431 6 12 6C13.6569 6 15 7.34315 15 9C15 10.3062 14.1652 11.4175 13 11.8293V13" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
               <circle cx="12" cy="16" r="1" fill="white" />
             </svg>
@@ -178,7 +178,7 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
         <div className="bg-white mx-4 mt-4 rounded-2xl border border-[#E5E7EB] overflow-hidden" style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
           <div className="p-5">
             <div className="flex items-center gap-4 mb-5">
-              <div className="w-16 h-16 bg-[#FFC72C] rounded-2xl flex items-center justify-center text-white text-xl font-bold ring-2 ring-[#FFC72C]/20">
+              <div className="w-16 h-16 bg-[#1E3A8A] rounded-2xl flex items-center justify-center text-white text-xl font-bold ring-2 ring-[#1E3A8A]/20">
                 JS
               </div>
               <div className="flex-1">
@@ -234,7 +234,7 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
           <div className="bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden" style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
             <div className="flex items-center justify-between p-3.5">
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-[#FEF3C7] border border-[#FFE066]">
+                <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-[#FEF3C7] border border-[#DBEAFE]">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                     <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" fill="#F59E0B" />
                     <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
@@ -245,7 +245,7 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
               <button
                 onClick={() => setNotificationsEnabled(!notificationsEnabled)}
                 className={`relative w-[44px] h-[26px] rounded-full transition-colors ${
-                  notificationsEnabled ? 'bg-[#FFC72C]' : 'bg-[#D1D5DB]'
+                  notificationsEnabled ? 'bg-[#1E3A8A]' : 'bg-[#D1D5DB]'
                 }`}
               >
                 <div
@@ -305,8 +305,8 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
                   onClick={() => handleLanguageSelect(lang.name)}
                   className={`w-full flex items-center justify-between p-4 rounded-xl border-2 transition-all ${
                     selectedLanguage === lang.name
-                      ? 'border-[#FFC72C] bg-[#FFFDF0]'
-                      : 'border-[#E5E7EB] hover:border-[#FFC72C]/30'
+                      ? 'border-[#1E3A8A] bg-[#EFF6FF]'
+                      : 'border-[#E5E7EB] hover:border-[#1E3A8A]/30'
                   }`}
                 >
                   <div className="flex flex-col items-start">
@@ -314,7 +314,7 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
                     <span className="text-sm text-[#6B7280]">{lang.nativeName}</span>
                   </div>
                   {selectedLanguage === lang.name && (
-                    <div className="w-6 h-6 bg-[#FFC72C] rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 bg-[#1E3A8A] rounded-full flex items-center justify-center">
                       <Check className="w-4 h-4 text-white" />
                     </div>
                   )}
@@ -332,7 +332,7 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
               </Button>
               <Button
                 onClick={handleConfirmLanguage}
-                className="flex-1 h-[48px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800]"
+                className="flex-1 h-[48px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF]"
               >
                 Continue
               </Button>
@@ -374,7 +374,7 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
               </Button>
               <Button
                 onClick={handleFinalConfirm}
-                className="flex-1 h-[48px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800]"
+                className="flex-1 h-[48px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF]"
               >
                 Confirm
               </Button>

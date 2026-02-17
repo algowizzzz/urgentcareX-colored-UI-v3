@@ -105,7 +105,7 @@ export default function SymptomCheckerStart({ onStart, onBack }: SymptomCheckerS
       <div className="px-8 py-4 bg-white border-t border-[#E5E7EB]">
         <Button 
           onClick={onStart}
-          className="w-full h-[52px] bg-[#FFC72C] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#E5A800]"
+          className="w-full h-[52px] bg-[#1E3A8A] text-white rounded-xl text-base font-medium hover:bg-[#1E40AF]"
         >
           Find Care Now
         </Button>
