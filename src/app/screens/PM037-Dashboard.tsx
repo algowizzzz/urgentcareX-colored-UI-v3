@@ -83,7 +83,7 @@ export default function Dashboard({
   return (
     <div className="flex flex-col h-full bg-[#F3F4F6] relative">
       {/* Header with gradient */}
-      <div className="bg-gradient-to-br from-[#1F2937] to-[#111827] px-6 pt-8 pb-6 relative overflow-hidden">
+      <div className="bg-[#1E3A8A] px-6 pt-8 pb-6 relative overflow-hidden">
         {/* Decorative circles */}
         <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#1E3A8A]/5 rounded-full"></div>
         <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#1E3A8A]/5 rounded-full"></div>
@@ -109,8 +109,8 @@ export default function Dashboard({
             </svg>
             <div className="absolute -top-1 -right-1 flex items-center justify-center">
               <div className="absolute w-[20px] h-[20px] bg-[#EF4444] rounded-full animate-ping opacity-30"></div>
-              <div className="w-[18px] h-[18px] bg-[#EF4444] rounded-full ring-2 ring-[#1F2937] flex items-center justify-center relative">
-                <span className="text-[9px] font-bold text-white">3</span>
+              <div className="w-[18px] h-[18px] bg-white rounded-full ring-2 ring-[#1E3A8A] flex items-center justify-center relative">
+                <span className="text-[9px] font-bold text-[#1E3A8A]">3</span>
               </div>
             </div>
           </button>
@@ -126,7 +126,7 @@ export default function Dashboard({
           ></div>
 
           <div className="absolute top-0 right-0 bottom-0 w-full bg-[#F9FAFB] z-50 shadow-2xl animate-[slideInRight_0.3s_ease-out]">
-            <div className="bg-gradient-to-br from-[#1F2937] to-[#111827] px-6 py-4 flex items-center justify-between">
+            <div className="bg-[#1E3A8A] px-6 py-4 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <h2 className="text-lg font-semibold text-white">Notifications</h2>
                 <div className="px-2 py-0.5 bg-[#1E3A8A] rounded-full">
